@@ -1,0 +1,139 @@
+@font-face {
+    font-family:Poppins ;
+    src: url(fonts/PoppinsRegular-B2Bw.otf);
+}
+@font-face {
+    font-family: Popp;
+    src: url(fonts/PoppinsExtralight-6Je1.otf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    clear: right;
+}
+.container{
+    text-align: center;
+    padding-top: 80px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
+}
+
+header h1{
+    font-family: Popp;
+    font-weight: 200;
+    font-size: 25px;
+    padding-bottom: 15px;
+}
+
+header h2{
+    font-family: Poppins;
+    font-size: 25px;
+    font-weight: 600;
+    padding-bottom: 30px;
+}
+
+header p{
+    font-family: Popp;
+    font-size: 15px;
+    padding-bottom: 50px;
+    color: grey;
+    /* max-width: 320px; */
+    word-spacing: 2px;
+}
+
+.section{
+    padding-bottom: 70px;
+}
+
+section img{
+    /* position: relative;
+    left:190px; */
+    float: right;
+    padding-top: 40px;
+   
+}
+
+section{
+    margin-bottom: 35px;
+    background-color: hsl(0, 0%, 98%);
+    text-align: start;
+    padding: 0 40px;
+    padding-top: 35px;
+    padding-bottom: 150px;
+    transition: all 0.2s ease-in-out;
+   
+    box-shadow: 0 4px 8px 0 rgba(93, 129, 126, 0.986), 0 6px 50px 0 rgba(93, 129, 126, 0.158); 
+}
+section:hover{
+    cursor: pointer;
+    padding: 0 50px;
+    padding-top: 45px;
+    padding-bottom: 160px;
+}
+
+section h2{
+    padding-bottom: 20px;
+    font-family: Poppins;
+    font-weight: 600;
+}
+section p{
+    font-size: 15px;
+    font-family: Popp;
+    line-height: 25px;
+    color: grey;
+}
+
+.section-1{
+    border-top: 7px solid hsl(180, 62%, 55%);
+    border-radius: 6px;
+}
+.section-2{
+    border-top: 7px solid hsl(0, 78%, 62%);
+    border-radius: 6px;
+}
+.section-3{
+    border-top: 7px solid hsl(34, 97%, 64%);
+    border-radius: 6px;
+}
+.section-4{
+    border-top: 7px solid hsl(212, 86%, 64%);
+    border-radius: 6px;
+}
+
+@media screen and (min-width:1000px) {
+    .container{
+        padding-bottom: 0;
+        padding: 80px 50px;
+    }
+    section{
+        height:300px;
+        margin-bottom: 0;
+    }
+    .section{
+        padding-bottom: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "section-1 section-2 section-4"
+        "section-1 section-3 section-4";
+        grid-gap: 1.8rem;
+        align-items: center;
+    }
+    .section-1{
+        grid-area: section-1;
+    }
+    .section-2{
+        grid-area: section-2;
+    }
+    .section-3{
+        grid-area: section-3;
+    }
+    .section-4{
+        grid-area: section-4;
+    }
+    
+}

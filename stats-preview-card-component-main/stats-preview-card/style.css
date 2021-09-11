@@ -1,0 +1,36 @@
+@font-face {
+    font-family: Int;
+    src: url(fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+@font-face {
+    font-family: Lex;
+    src: url(fonts/LexendDeca-Regular.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: hsl(277, 64%, 61%);
+}
+
+.container{
+    display: flex;
+    background-color: hsl(233, 47%, 7%);
+}
+
+.info{
+    display: flex;
+    justify-content: space-between;
+}
+
+.info span{
+    display: block;
+    text-transform: uppercase;
+}
+
+.insight{
+    background-color: hsl(244, 38%, 16%);
+}

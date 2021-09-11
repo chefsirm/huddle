@@ -1,0 +1,113 @@
+@font-face {
+    font-family:BigSD;
+    src: url(fonts/BigShouldersDisplay-Bold.ttf);
+}
+@font-face {
+    font-family: LexD;
+    src: url(fonts/LexendDeca-Regular.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+h1{
+    font-family: BigSD;
+    color: hsl(0, 0%, 95%);
+    text-transform: uppercase;
+}
+
+p{
+    font-family: LexD;
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height:25px;
+    font-weight: 100;
+    
+}
+.container{
+    display: flex;
+    width: 70vw;
+    height: 100vh;
+    margin: auto;
+    
+    align-items: center;
+}
+@media screen and (max-width:800px) {
+    .container{
+        display: block;
+        height: 100vh;
+        margin: 40px auto;
+    }
+}
+
+.cards{
+    padding: 38px;
+    
+}
+.cards img,
+.cards h1{
+    padding-bottom: 28px;
+}
+
+.cards button{
+    font-family: LexD;
+    background-color: hsl(0, 0%, 95%);
+    margin-top: 75px;
+    border-radius: 25px;
+    border-style: none;
+    padding: 10px 20px;
+
+    
+    
+}
+
+
+
+.card-1{
+    background-color: hsl(31, 77%, 52%);
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.card-1 button{
+    color: hsl(31, 77%, 52%);
+}
+.card-2{
+    background-color: hsl(184, 100%, 22%);
+}
+.card-2 button{
+    color: hsl(184, 100%, 22%);
+    
+}
+.card-3{
+    background-color: hsl(179, 100%, 13%);
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.card-3 button{
+    color: hsl(179, 100%, 13%);
+}
+button:hover{
+    cursor: pointer;
+    background-color: transparent;
+    color: hsl(0, 0%, 95%);
+    border: 1px solid hsl(0, 0%, 95%);
+}
+
+@media screen and (max-width:800px) {
+    .cards button{
+        margin-top: 50px;
+    }
+    .card-1{
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0px;
+    }
+    .card-3{
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 0px;
+    }
+}
